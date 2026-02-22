@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-bpp-red: #E31E24;
+  --color-bpp-green: #009245;
+  --color-bpp-yellow: #FFD200;
+  --color-bpp-white: #FFFFFF;
+}
+
+@utility text-shadow-lg {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+@layer base {
+  body {
+    @apply font-sans text-gray-900 bg-white;
+  }
+}
+
+.bjp-style-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--color-bpp-red) 0%, var(--color-bpp-green) 100%);
+}
